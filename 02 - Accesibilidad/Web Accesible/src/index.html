@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Accesible</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    
+    <header title="Header de la web" class="headerWeb">
+
+        <img class="headerWeb-logo" src="../img/panLogo.png" alt="Este es el logo de la web, tiene forma de pan">
+
+        <h1 class="headerWeb__nav-enlace">Inicio</h1>
+
+        <nav title="Navegacion"  class="headerWeb__nav">
+            <a tabindex='1'  class="headerWeb__nav-enlace" href="#" alt="Es un enlace que te lleva a la seccion de nuestros panes">Nuestros Panes</a>
+            <a tabindex='2' class="headerWeb__nav-enlace" href="#" alt="Es un enlace que te lleva a la tienda">Tienda</a>
+            <a tabindex='3' class="headerWeb__nav-enlace" href="#"  alt="Es un enlace que te al Carrito">Carrito</a>
+        </nav>
+    </header>
+
+   
+
+
+    <main class="main">
+        <section  title="Informacion sobre la panaderia"
+        class="sectionMain">
+            <header class="sectionMain_abecera">
+                <h1>¡La mejor panadería de sevilla!</h1>
+            </header>
+
+            <div class="sectionMain_texto">
+                <!-- Linea por debajo para la gente que no pueda ver el color-->
+                <p><span class="sectionMain_texto-destacar"> Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Nesciunt vitae debitis, nulla consectetur hic non commodi unde sapiente laborum maxime odit quas nihil quasi, aspernatur distinctio voluptas eligendi id harum!</p>
+            </div>
+        </section>
+
+
+        <video
+        class="main-video"  
+        title="Video Panaderia" 
+        alt="Es un video que muestra como es la panadería por dentro" width="500" height="300" controls>
+            <source src="../video/panes.mp4" type="video/mp4">
+
+            <!-- Texto alternativo para las personas sordas -->
+            <track src="Texto alternativo para las personas sordas.vtt" kind="subtitles" srclang="es" label="Español">
+          Your browser does not support the video tag.
+
+        </video>
+    </main>
+
+    <section 
+    title="Formulario" 
+    class="seccionFormulario"
+    alt="Formulario para solicitar más información sobre la  panaderia">
+            <header class="seccionFormulario_header">
+                    <h1>Más Informacion</h1>
+            </header>
+
+        <form class="formulario"
+        action="/">
+            <div>
+                <label class="sectionMain_texto-destacar formulario-label" for="Introduce un correro">* Introduce un correo electronico:</label>
+                <input tabindex='11' type="text" name="Introduce un correro">
+            </div>
+           
+            <textarea 
+            placeholder="Introduce un texto aquí."
+            class="formulario-textArea"
+            tabindex='12'
+            name="Añade el texto que quieras" id="texto">
+            
+            Introduce un texto aquí.
+
+            </textarea>
+
+            <br>
+            
+            <input tabindex='13' class="bt" type="submit"  name="Boton para enviar">
+            <label for="Boton para enviar">Boton para enviar</label>
+        </form>
+    </section>
+
+   <footer class="footer">
+        <h3>Todos los derechos reservados</h3>
+   </footer>
+
+   <div class="menu">
+       <h4>Controlador</h4>
+
+      <button tabindex='4' onclick="disminuirLetra()">Disminuir la letra</button>
+      <button tabindex='5' onclick="letraPorDefecto()">Letra por Defecto</button>
+      <button tabindex='6' onclick="aumentarLetra()">Aumentar la letra</button>
+      <button tabindex='7' onclick="modoOcturo()">Cambiar a modo oscuro</button>
+      <button tabindex='8' onclick="modoClaro()">Cambiar a modo oscuro</button>
+      <button tabindex='9' onclick="reproducirVideo()">Reproducir el video</button>
+      <button tabindex='10' onclick="PararVideo()">Parar el video</button>
+   </div>
+
+   <script>
+
+       let parrafos = document.querySelectorAll('p');
+       let enlaces = document.querySelectorAll('a');
+       let cabecera1 = document.querySelectorAll('h1');
+       let cabecera2 = document.querySelectorAll('h1');
+
+       let tamanioLetra = 1;
+
+       let texto = [...parrafos, ...enlaces, ...cabecera1, ...cabecera2];
+
+       const aumentarLetra = () => {
+           texto.forEach((value, index)=>{
+                value.style.fontSize = `${tamanioLetra+=0.1}rem`;
+           })
+       }
+
+       const disminuirLetra = () => {
+           texto.forEach((value, index)=>{
+                value.style.fontSize = `${tamanioLetra-=0.1}rem`;
+           })
+       }
+
+       const letraPorDefecto = () => {
+           texto.forEach((value, index)=>{
+                value.style.fontSize = `1rem`;
+           })
+       }
+
+       const modoOcturo = () => {
+        texto.forEach((value, index)=>{
+                value.style.color = `white`;
+           })
+
+           document.body.style.backgroundColor = 'black'
+       }
+
+       const modoClaro = () => {
+        texto.forEach((value, index)=>{
+                value.style.color = `black`;
+           })
+
+           document.body.style.backgroundColor = 'white'
+       }
+
+       const reproducirVideo = () => {
+            document.querySelector('video').play(); 
+       }
+
+       const PararVideo = () => {
+            document.querySelector('video').pause(); 
+       }
+    
+        console.log(texto);
+   </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* == Seccion header == */
+
+.headerWeb{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 1px #502d0c solid;
+}
+
+.headerWeb-logo {
+    width: 60px;
+}
+
+.headerWeb__nav{
+   width: 30%;
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.headerWeb__nav-enlace{
+    text-decoration: none;
+    color: #502d0c;
+}
+
+/* font-size para las personas que no distingue los colores*/
+.headerWeb__nav-enlace:hover{
+    color: burlywood;
+    font-size: 1.3rem;
+}
+
+/* == Seccion Main == */
+
+.main{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+
+       margin-top: 20px;
+}
+
+.sectionMain {
+    width: 40%;
+    text-align: center;
+
+    background-color: burlywood;
+    border-radius: 10px;
+
+    padding: 20px;
+    
+}
+
+.sectionMain_abecera {
+    margin-bottom: 40px;
+}
+
+.sectionMain_texto-destacar{
+    color: crimson;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* == Formulario ==*/
+
+.seccionFormulario {
+
+    margin-top: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seccionFormulario_header{
+    margin-bottom: 20px;
+}
+
+.formulario{
+    background-color: burlywood;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario-label{
+    margin-right: 13px;
+    font-size: 1.2rem;
+}
+
+.formulario-textArea {
+    resize: none;
+
+    width: 600px;
+    height: 300px;
+}
+
+/* == footer == */
+
+.footer {
+
+    margin-top: 80px;
+
+    text-align: center;
+    padding: 40px;
+    background-color: burlywood;
+}
+
+/*== Menu == */
+.menu{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+
+    background-color: burlywood;
+    padding: 80px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 2;
+}
+
+.menu button {
+    margin-top: 15px;
+    padding: 10px;
+
+    color: white;
+    background-color: rgb(14, 65, 35);
+}
+
+.bt {
+    margin-top: 15px;
+    padding: 10px;
+
+    color: white;
+    background-color: rgb(14, 65, 35); 
+}
+
+/*== movil == */
+@media only screen and (max-width: 600px) {
+   h1 {
+       font-size: 1rem;
+   }
+
+   .menu{
+    position: absolute;
+    bottom: 0;
+   
+    padding: 5px 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 2;
+}
+  }

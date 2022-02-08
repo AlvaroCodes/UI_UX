@@ -1,0 +1,103 @@
+
+
+/*=============== BASE ===============*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+body {
+    background-color: #263B41;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+  /*=============== REUSABLE CSS CLASSES ===============*/
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  /*=============== HEADER ===============*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header img{
+    width: 4.5vh;
+    float: right;
+}
+
+header img:last-child{
+margin-right: 1vh;
+}
+
+
+  /*=============== SECTION ===============*/
+section{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+section nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+
+    bottom: 190px;
+}
+
+section h1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    font-size: 150px;
+    top: 190px;
+
+    color:  #381011;
+   
+}
+
+section nav div {
+    margin: 0 3rem;
+    padding: 2rem;
+    background-color:  #837878;
+}
+
+section nav div a {
+  margin: 0 3rem;
+  background-color:  #837878;
+  color:  #381011;
+  font-size: 1.5rem;
+}
+
+  /*=============== REPRODUCTOR ===============*/
+.repro{
+    width: 100%;
+}
+.repro img{
+    margin: 1rem 2rem 0 2rem;
+    width: 4vh;
+}
+
+.lineaRepro{
+    margin: 0 auto;
+    width: 100vh;
+    height: 3px;
+    background-color: red;
+}

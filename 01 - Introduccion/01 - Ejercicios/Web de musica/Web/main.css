@@ -1,0 +1,144 @@
+/*=============== BASE ===============*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+body {
+    background-color:   #381011;
+    font-family: 'Cormorant Garamond', serif;
+  
+}
+
+/*=============== HEADER ===============*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #263B41;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+
+header img{
+    width: 4.5vh;
+}
+header h1 a {
+    color: white;
+}
+
+header h1 a:hover {
+    
+    color: #381011;
+    
+    
+}
+header nav a {
+    font-size: 1.3rem;
+    color: white;
+    margin: 1rem;
+    
+}
+
+header nav a:hover {
+    
+    color: #381011;
+    
+    
+}
+
+.albunFotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.albunes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2rem;
+    margin-top: 5rem;
+}
+
+
+
+.albunes img {
+ width: 300px;
+}
+
+.albunes div {
+    display: flex;
+    align-items: center;
+    margin: 1.3rem 0;
+}
+
+.albunes div p {
+    margin: 0 1rem;
+    color: white;
+}
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  /*=============== REPRODUCTOR ===============*/
+  .repro{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.repro img{
+    margin: 1rem 2rem 0 2rem;
+    width: 4vh;
+}
+
+.lineaRepro{
+    margin: 0 auto;
+    width: 100vh;
+    height: 3px;
+    background-color: red;
+}
+
+
+  /*=============== Calendario ===============*/
+
+  .calendarioSection{ 
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      margin-top: 4rem;
+
+      width: 100%;
+}
+  .albun {
+      width: 300px;
+  }
+
+  .calendario { 
+    width: 600px;
+    margin-bottom: 2rem;
+  }
+
+.calendarioSection div form{
+   margin: 2rem;
+ }

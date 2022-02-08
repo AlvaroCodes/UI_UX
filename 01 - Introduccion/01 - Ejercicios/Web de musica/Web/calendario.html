@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Musica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1> <a href="./index.html">Maneskin</a> </h1>
+        <nav>
+            <a href="./tinda.html">Venta de entradas</a>
+            <a href="./calendario.html">Calendario</a>
+            <a href="./nuestraMusica.html">Nuestra Musica</a>
+        </nav>
+       
+        <nav>
+            <a href="#" class="apple"><img src="./img/apple_music_android_logo_icon_134021.png" alt="spoty"></a>
+            <a href="#" class="spoti"><img src="./img/pngwing.com.png" alt="apple Music"></a>
+        </nav>
+    </header>
+
+ <section class="calendarioSection">
+     <div>
+        <img class="albun" src="./img/albun2.jpg" alt="">
+        <form action="">
+            <label for="">Selecciona la fecha</label><input type="date">
+            <br>
+            <input type="submit">
+        </form>
+     </div>
+
+     <div>
+        <img class="calendario" src="./img/calendario.jpeg" alt="">
+     </div>
+ </section>
+
+    <section>
+        <hr class="lineaRepro">
+        <div class="repro center">
+            <img src="./img/anterior.png" alt="anterior">
+            <img src="./img/flecha-de-juego.png" alt="play">
+            <img src="./img/omitir.png" alt="siguiente">
+        </div>
+        <audio src="musica.mp3"  autoplay loop></audio>
+    </section>
+</body>
+</html>
