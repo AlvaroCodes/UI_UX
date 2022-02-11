@@ -162,22 +162,50 @@ img {
 }
 
 /*== movil == */
-@media only screen and (max-width: 600px) {
-   h1 {
-       font-size: 1rem;
-   }
 
-   .menu{
-    position: absolute;
-    bottom: 0;
-   
-    padding: 5px 5px;
+  @media only screen and (max-width: 836px) {
+    h1 {
+        font-size: 1.2em;
+    }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
 
-    z-index: 2;
-}
+    p{
+        font-size: 1em;
+    }
+
+    a.headerWeb__nav-enlace{
+        font-size: 0.9em;
+    }
+
+   #eliminarMovil{
+        display: none;
+    }
+
+    .menu {
+    display: none;
+    }
+
+    .formulario{
+        width: 70%;
+        padding: 0;
+    }
+
+    #texto {
+        width: 200px;
+    }
+
+    video {
+        width: 300px;
+    }
+
+    .formulario div {
+        width: 100%;
+        margin: 0 auto;
+
+        text-align: center;
+    }
   }
